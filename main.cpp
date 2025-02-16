@@ -1,278 +1,250 @@
-//problem 1
+//problem1
+#include <iomanip>
 #include <iostream>
 using namespace std;
 // int main() {
-//     int num;
-//     cout << "Enter a number: ";
-//     cin >> num;
-//     if (num > 0) {
-//         cout << "Your number is positive" << endl;
+//     // //1.1
+//     for (int i=1; i <= 10; i++) {
+//         cout << i << " ";
 //     }
-//     else if (num < 0) {
-//         cout << "Your number is negative" << endl;
+//     cout << endl;
+//     //1.2
+//     int N;
+//     cin >> N;
+//     for (int i=1; i <= N; i++) {
+//         cout << i << " ";
 //     }
-//     else {
-//         cout << "Your number is zero" << endl;
+//     cout << endl;
+//     //1.3
+//     int sum10 =0;
+//     for (int i=1; i <=10; i++) sum10 += i;
+//     {
+//         cout << sum10;
 //     }
+//     cout << endl;
+//     //1.4
+//     int sumN =0;
+//     for (int i=1; i<=N; i++) sumN += i;
+//     {
+//         cout << sumN;
+//     }
+//     cout << endl;
+//     //1.5
+//     cout << sum10/10 << endl;
+//     //1.6
+//     cout << sumN/10 << endl;
 //     return 0;
 // }
 
 //problem 2
 // int main() {
-// int num;
-//     cout << "Enter a number" << endl;
-//     cin >> num;
-//     if (num % 2 == 0) {
-//         cout << "The number is even" << endl;
+//     int N;
+//     cin >> N;
+//     //2.1
+//     for (int i = 1; i <= 10; i+=2) {
+//         cout << i << " ";
 //     }
-//     else if (num % 2 != 0) {
-//         cout << "The number is odd" << endl;
+//     cout << endl;
+//     //2.2
+//     for (int i = 2; i <= 10; i+=2) {
+//         cout << i << " ";
 //     }
+//     cout << endl;
+//     //2.3
+//     for (int i = 1; i <= N; i+=2) {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+//     //2.4
+//     for (int i = 2; i <= N; i+=2) {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+//     //2.5
+//     for (int i = 10; i <= 100; i+=10) {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+//     //2.6
+//     for (int i = 10; i <=N; i+=10) {
+//         cout << i << " ";
+//     }
+//     cout << endl;
 //     return 0;
-//     }
+// }
 
 //problem 3
-// int main () {
-//     int num1, num2;
-//     cout << "Enter two numbers: ";
-//     cin >> num1 >> num2;
-//     if (num1 > num2) {
-//         cout << num1 << " is greater than " << num2 << endl;
+// int main() {
+//     int count=0;
+//     for (char c= 'A'; c <= 'Z'; c++) {
+//     cout << c << " ";
+//         if (++count % 5 == 0) cout << endl;
 //     }
-//     else {
-//     cout << num2 << " is greater than " << num1 << endl;
-//     }
+//     cout << endl;
 //     return 0;
 // }
 
 //problem 4
 // int main() {
-//     int num1, num2, num3;
-//     cout << "Enter three numbers: ";
-//     cin >> num1 >> num2 >> num3;
-//     if (num1 > num2) {
-//         if (num1 > num3) {
-//             cout << num1 << " is the largest number" << endl;
+//     int number;
+//     cout << "Enter a number:";
+//     cin >> number;
+//     if (number < 0) {
+//         cout <<" Factorial of a negative number is not defined";
+//     }else {
+//         int factorial = 1;
+//         for (int i = 1; i <= number; i++) factorial *= i; {
+//             cout << "Factorial of" << number << " is " << factorial << endl;
 //         }
 //     }
-//         if (num2 > num3) {
-//             if (num2 > num1) {
-//                 cout << num2 << " is the largest number" << endl;
-//             }
-//         }
-//             else {
-//                 cout << num3 << "is the largest number" << endl;
-//             }
-//             return 0;
-//             }
-
-// problem 5
-// int main() {
-//     int year;
-//     cout << " Enter a year : ";
-//     cin >> year;
-//     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-//         cout << " The year is a leap year";
-//     }
-//     else {
-//         cout << " The year is not a leap year";
 //     return 0;
 // }
 
-// problem 6
+//problem 5
 // int main() {
-//     int speed;
-//     cout << "Enter speed: ";
-//     cin >> speed;
-//     if (speed < 20) {
-//         cout << " Speed is too slow" << endl;
+//    int classes;
+//     cout << "Enter number of classes ";
+//     cin >> classes;
+//     float totalCredits = 0.0 , weightedSum = 0.0;
+//     for (int i =0 ; i < classes ; i++) {
+//       double credit, grade;
+//       cout << "Enter credit hours and grade points for class " << i+1 << ": ";
+//       cin >> credit >> grade;
+//       weightedSum += credit * grade;
+//       totalCredits += credit;
 //     }
-//     else if (speed > 80) {
-//         cout << " Speed is too fast" << endl;
+//     double gpa =  weightedSum/ totalCredits;
+//     cout << "Total GPA = " << gpa << endl;
+//     return 0;
+// }
+
+//problem 6
+// int main() {
+//     int numStudents;
+//     cout << " Enter the number students: ";
+//     cin >> numStudents;
+// double totalGPA = 0.0;
+//     for (int s = 0; s < numStudents; s++) {
+//         int numClasses;
+//         cout << " Enter the number of classes for student " << s+1 << ": ";
+//         cin >> numClasses;
 //     }
-//     else {
-//         cout << " Speed is just right" << endl;
+//     double totalCredits = 0.0, weightedSum = 0.0;
+//     for (int i = 0; i < numStudents; i++) {
+//         double credit, grade;
+//         cout << " Enter credit hours and grade points for class " << i+1 << ": ";
+//         cin >> credit >> grade;
+//         weightedSum += credit * grade;
+//         totalCredits += credit;
 //     }
+//     double studentGPA = totalCredits == 0.0 ? 0.0 : weightedSum / totalCredits;
+//     totalGPA += studentGPA;
+//     double avgGPA = totalGPA / numStudents;
+//     cout << " Class average Gpa:" << fixed << setprecision(4) << avgGPA << endl;
 //     return 0;
 // }
 
 //problem 7
+ // int main () {
+ //     int n;
+ //     cin >> n;
+ //     for ( int i = 0; i < n; i++ ) {
+ //         for (int j = 0; j < n; j++ ) cout << "*";
+ //         cout << endl;
+ //     }
+ //     return 0;
+ // }
+
+//problem 8
 // int main() {
-//     int mark;
-//     cout << "Please enter your mark: ";
-//     cin >> mark;
-//     if (mark >= 50) {
-//         cout << " You passed the course";
-//     }
-//     else {
-//         cout << " You failed the course";
-//     }
+//  int n;
+//  cin>>n;
+//  for (int i = 1; i <= n; i++) {
+//    for (int j = 0; j < i; j++) cout << "*";
+//      cout << endl;
+//  }
 //     return 0;
 // }
 
-//problem 8
-// int main () {
-// int num;
-//     cout << "Enter a number: ";
-//     cin >> num;
-//     if (num >= 0) {
-//         if (num == 0) {
-//             cout << " Status: zero";
-//         } else {
-//             cout << " Status: positive";
-//         }
-//     } else {
-//         cout << " Status: negative";
-//     }
-// return 0;
-//         }
-
 //problem 9
-// int main() {
-//     char letter;
-//     cout << "Enter a traffic light symbol: ";
-//     cin >> letter;
-//     if (letter == 'g') {
-//         cout << " Go";
-//     }
-//     if (letter == 'y') {
-//         cout << "Get ready";
-//     }
-//     if (letter == 'r') {
-//         cout << "Stop";
-//     }
-// return 0;
+// int main () {
+//  int n;
+//  cin >> n;
+//  bool isPrime = n>1;
+//  for (int i =2; i * i <= n; i++) {
+//   if (n % i == 0) {
+//    isPrime = false;
+//    break;
+//   }
+//  }
+//  cout << "Number is" << (isPrime ? "prime" : "not prime ")  << endl;
+//  return 0;
 // }
 
 //problem 10
 // int main () {
-//     int grade;
-//     cout << "Please enter your grade: ";
-//     cin >> grade;
-//     if (grade >= 90 && grade <= 100) {
-//         cout << "Your grade is: A " << endl;
-//     }
-//     if (grade >= 80 && grade <= 89) {
-//         cout << "Your grade is: B " << endl;
-//     }
-//     if (grade >= 70 && grade <= 79) {
-//         cout << "Your grade is: C " << endl;
-//     }
-//     if (grade >= 60 && grade <= 69) {
-//         cout << "Your grade is: D " << endl;
-//     }else {
-//         cout << "Your grade is: F " << endl;
-//     }
-//     return 0;
+//  int n;
+//  cin >> n;
+//  for (int i = 1; i <= n; i++) {
+//   cout << i << "*" << i << " = " << i * i << endl;
+//  }
+//  return 0;
 // }
 
 //problem 11
-// int main() {
-//     int num1, num2;;
-//     cout << "Enter two integers:";
-//     cin >> num1 >> num2;
-//     if (num2 ==0) {
-//         cout << "Division be zero is not possible";
-//     }else if (num1 % num2 ==0) {
-//         cout << "Number 1 is divisible by number 2";
-//     } else {
-//         cout << "Number 1 is not divisible by number 2";
-//     }
-//     return 0;
-// }
+ // int main () {
+ //  int num,count = 0 , pos = 0, neg =0, sum =0;
+ //  while (true) {
+ //   cin>>num;
+ //   if (num == 0) break;
+ //   count++;
+ //   sum += num;
+ //   (num > 0) ? neg++ : pos++;
+ //  }
+ //  cout << "The number of positive is " << pos << endl;
+ //  cout << "The number of negative is " << neg << endl;
+ //  cout << "The sum is " << sum << endl;
+ //  cout << "The average is" << (sum / (double)count) << endl;
+ //  return 0;
+ // }
 
 //problem 12
-// int main() {
-//     int num1, num2 , num3;
-//     cout << "Enter the angles of the triangle : ";
-//     cin >> num1 >> num2 >> num3 ;
-//     if (num1+ num2+ num3 == 180 && num1 > 0 && num2 > 0 && num3 > 0) {
-//         cout << " A triangle can be formed";
-//     }else {
-//         cout << " Triangle cannot be formed";
-//     }
-//     return 0;
+// int main () {
+//  int n;
+//  cin >> n;
+//    while (n >0) {
+//     cout << (n % 10);
+//     n /= 10;
+//   }
+//  return 0;
 // }
 
 //problem 13
-// int main() {
-//     char ch;
-//     cout << "Enter a character: ";
-//     cin >> ch;
-//     if (ch >= 'a' && ch <= 'z') {
-//         cout << ch << " is an lowercase letter ";
-//     }
-//     else if ( ch >= 'A'&& ch <= 'Z') {
-//         cout << ch << " is an uppercase letter ";
-//     }else {
-//         cout << ch << "is not an alphabet";
-//     }
-//     return 0;
+// int main () {
+//  int n;
+//  cin >> n;
+//  if ( n == 0) {
+//   cout << " The depth is 0";
+//  }else {
+//   for ( int i= 1; i <= n; i++) {
+//    for ( int j= 0; j < i; j++) cout << i;
+//    cout << endl;
+//   }
+//  }
+//
+//  return 0;
 // }
 
 //problem 14
-// int main () {
-//     double weight1,price1,weight2,price2;
-//     cout << "Enter the weight and the price of the first package";
-//     cin >> weight1 >> price1;
-//     cout << "Enter the weight and the price of the second package";
-//     cin >> weight2 >> price2;
-//     double costPerKg1= price1 / weight1;
-//     double costPerKg2= price2/ weight2;
-//     if (costPerKg1 == costPerKg2) {
-//         cout << " They have the same price" << endl;
-//     }else if (costPerKg1 > costPerKg2) {
-//         cout << " first package has a better price" << endl;
-//     } else {
-//         cout << " second package has a better price" << endl;
-//     }
-//     return 0;
-// }
-
-//problem 15
-// int main() {
-//     int number;
-//     cout << " Enter a 3 digit number : ";
-//     cin >> number;
-//     int firstDigit = number /100;
-//     int lastDigit = number % 10;
-//     if (firstDigit == lastDigit) {
-//         cout << number << "is a palindrome";
-//     }else {
-//         cout << number << "is not a palindrome";
-//     }
-//     return 0;
-// }
-
-//problem 16
-// #include <cmath>
-// int main() {
-//     float x, y;
-//     cout << " Enter the coordinates (x,y)";
-//     cin >> x >> y;
-//     float distance= sqrt (x*x + y*y);
-//     if (distance <=10) {
-//         cout << "point ( " << x << ", " << y << " )is in the circle ";
-//     }else {
-//         cout << "point ( " << x << ", " << y << " )is out of the circle";
-//     }
-//     return 0;
-// }
-
-//problem 17
-// int main () {
-//     float gpa;
-//     cout << "Enter GPA (0 - 4.5): ";
-//     cin >> gpa;
-//
-//     if (gpa >= 4.0) {
-//         cout << "You got 80% scholarship";
-//     } else if (gpa >= 3.5) {
-//         cout << "You got 60% scholarship";
-//     } else if (gpa >= 3.0) {
-//         cout << "You got 50% scholarship";
-//     } else {
-//         cout << "No scholarship";
-//     }
-//     return 0;
+//  int main() {
+//   int n, dec = 0, base = 1;
+//   cin >> n;
+//   while (n > 0) {
+//    dec += (n % 10) * base;
+//    base *= 2;
+//    n /= 10;
+//   }
+//   cout << "The decimal number is " << dec << endl;
+//   return 0;
+//  }
 // }
